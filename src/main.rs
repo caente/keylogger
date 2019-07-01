@@ -98,7 +98,7 @@ fn add_metadata(text: &str) -> String {
         .map(|t| String::from_utf8(t))
         .expect("no process found")
         .expect("this is not a string");
-    format!("{} | {} | {}", text, now.format("%Y-%m-%d %H:%M:%S").to_string(), app_title )
+    format!("{} | {} | {}\n", text, now.format("%Y-%m-%d %H:%M:%S").to_string(), app_title )
 }
 
 fn root_check() {

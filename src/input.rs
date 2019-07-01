@@ -89,7 +89,8 @@ pub fn get_key_text(code: u16, shift_pressed: u8) -> &'static str {
     };
 
     if code < MAX_KEYS {
-        return arr[code as usize];
+        let key = arr[code as usize];
+        return key;
     } else {
         debug!("Unknown key: {}", code);
         return UK;
